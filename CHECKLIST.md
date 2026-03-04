@@ -1,5 +1,45 @@
 # 📝 Checklist de Développement
 
+---
+
+## 🚀 Super-App Étudiante — EduMarket
+
+### Phase 1 : Architecture & Base de données
+- [x] Créer `TECH_SPEC.md` avec les choix techniques (Flutter + Supabase + Stripe Connect)
+- [x] Définir le schéma DB PostgreSQL (`users`, `vendors`, `catalog`, `orders`, `sub_orders`, `order_items`)
+- [x] Implémenter Row Level Security (RLS) pour chaque table
+- [x] Concevoir la stratégie d'authentification (regex email + OTP Supabase)
+- [x] Créer la structure Clean Architecture (`core/`, `domain/`, `data/`, `presentation/`)
+
+### Phase 2 : Core Features (Frontend)
+- [x] Écran `RegisterScreen` avec validation email étudiant bloquante
+- [x] Écran `OtpVerificationScreen` (code OTP 6 chiffres avec countdown renvoi)
+- [x] Dashboard `HubDashboardScreen` (codes promo statiques + raccourcis catégories)
+- [x] `VendorListScreen` avec filtres par catégorie (Food, Tech, Papeterie)
+- [x] `CartScreen` panier multi-vendeurs (items de sources différentes)
+- [x] `CartBloc` — State Management BLoC pour le panier
+
+### Phase 3 : Logique Métier & Edge Functions
+- [x] Edge Function `validate-order` (vérif. stock + promo + Stripe PaymentIntent)
+- [x] Edge Function `delivery-fee` (calcul dynamique distance Haversine)
+- [x] Edge Function `dispatch-order` (Stripe Connect transfer + Stuart API)
+
+### Phase 4 : Tests
+- [x] Tests unitaires `email_validator_test.dart` (validation email + CartEntity)
+- [ ] Tests BLoC (`CartBloc` avec `bloc_test`)
+- [ ] Tests d'intégration Edge Functions (Deno test)
+
+### Phase 5 : À valider avant génération du code principal
+- [ ] ✅ Confirmer stack technique dans `TECH_SPEC.md`
+- [ ] Implémenter `data/` layer (Supabase datasources + repository implémentations)
+- [ ] Connecter les BLoCs aux écrans (injection via `get_it`)
+- [ ] Ajouter navigation (`go_router`)
+- [ ] Intégrer Stripe Flutter SDK pour le paiement
+
+---
+
+## Chess RPG Architecture Guide
+
 ## Phase 1 : Setup du Projet
 
 ### Création de la Structure de Dossiers
