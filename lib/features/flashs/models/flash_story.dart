@@ -57,9 +57,20 @@ class FlashStory {
     return {
       'id': id,
       'author_id': authorId,
-      'type': type.name,
+      'type': _storyTypeToString(type),
       'content': content,
       'media_url': mediaUrl,
     };
+  }
+
+  static String _storyTypeToString(StoryType type) {
+    switch (type) {
+      case StoryType.soiree:
+        return 'soiree';
+      case StoryType.urgence:
+        return 'urgence';
+      case StoryType.offreFlash:
+        return 'offre_flash';
+    }
   }
 }

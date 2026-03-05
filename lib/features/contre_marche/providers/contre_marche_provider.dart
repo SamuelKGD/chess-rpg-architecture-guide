@@ -22,7 +22,7 @@ class ContreMarcheProvider extends ChangeNotifier {
     notifyListeners();
 
     // TODO: Remplacer par un appel Supabase réel
-    _listings = [];
+    // _listings = response.map(MarketListing.fromJson).toList();
 
     _isLoading = false;
     notifyListeners();
@@ -44,7 +44,7 @@ class ContreMarcheProvider extends ChangeNotifier {
     notifyListeners();
 
     // TODO: Remplacer par un appel Supabase réel
-    _orders = [];
+    // _orders = response.map(MarketOrder.fromJson).toList();
 
     _isLoading = false;
     notifyListeners();

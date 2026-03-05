@@ -22,7 +22,7 @@ class AssembleeProvider extends ChangeNotifier {
     notifyListeners();
 
     // TODO: Remplacer par un appel Supabase réel
-    _groups = [];
+    // _groups = response.map(StudyGroup.fromJson).toList();
 
     _isLoading = false;
     notifyListeners();
@@ -34,7 +34,7 @@ class AssembleeProvider extends ChangeNotifier {
     notifyListeners();
 
     // TODO: Remplacer par un appel Supabase réel
-    _events = [];
+    // _events = response.map(CampusEvent.fromJson).toList();
 
     _isLoading = false;
     notifyListeners();

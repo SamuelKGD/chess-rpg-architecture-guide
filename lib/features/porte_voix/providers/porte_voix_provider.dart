@@ -23,7 +23,7 @@ class PorteVoixProvider extends ChangeNotifier {
     //     .from('vertical_posts')
     //     .select('*, profiles(username)')
     //     .order('created_at', ascending: false);
-    _posts = [];
+    // _posts = response.map(VerticalPost.fromJson).toList();
 
     _isLoading = false;
     notifyListeners();
