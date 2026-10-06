@@ -11,6 +11,12 @@ Ce projet démontre comment créer un système de pièces d'echecs scalable et m
 - **Component Architecture** pour séparer données/logique/présentation
 - **Observer Pattern** pour les événements découplés
 
+## ⚠️ Statut de la demande HTML `Test6_competences_v2.html`
+
+Le fichier demandé `Test6_competences_v2.html` n'est pas présent dans ce dépôt (ni aucun autre fichier `.html` de jeu associé).
+
+Par conséquent, la modularisation ES modules du jeu navigateur et la vérification des 200 définitions (`roi-*`, `reine-*`, `tour-*`, `cavalier-*`, `fou-*`, `soldat-*`) ne peuvent pas être réalisées de façon fiable dans cet état.
+
 ## ✅ Objectifs Architecturaux
 
 ✅ **Ajouter 200 variétés** = créer 200 assets ScriptableObject, **zéro code compilé**
